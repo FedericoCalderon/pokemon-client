@@ -1,0 +1,94 @@
+
+<div [ngClass]="{'show':showPopup==true,'hide':showPopup==false}">
+
+  <form class="form-create-container">
+        <div class="form-create-title">
+         <h3> {{titleForm}}</h3>
+        </div>
+        <div class="form-group">
+          <div class="inp-group">
+            <label for="nameId">Nombre: </label>
+            <input class="form-input" type="text" name="nameId" id="nameId" placeholder="Ivysaur" [(ngModel)]="name">
+          </div>
+          <div class="bar-group">
+            <label for="attackId">Ataque: {{attack}} </label>
+            <div class="bar-inp-group">
+              <span>0</span>
+              <input type="range" min="0" max="100" name="attackId" id="attackId" [(ngModel)]="attack">
+              <span>100</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="inp-group padding-left">
+            <label for="imageId">Imagen: </label>
+            <input class="form-input" type="text" name="imageId" id="imageId" placeholder="url" [(ngModel)]="image">
+          </div>
+          <div class="bar-group">
+            <label for="dedfenseId">Defensa: {{defense}} </label>
+            <div class="bar-inp-group">
+              <span>0</span>
+              <input type="range" min="0" max="100" name="dedfenseId" id="dedfenseId" [(ngModel)]="defense">
+              <span>100</span>
+            </div>
+          </div>
+        </div>
+        <div class="txarea-group">
+          <div class="form-group txarea-group">
+            <label for="descriptionId">Descripción: </label>
+            <textarea class="txarea" name="description" id="descriptionId" rows="5" [(ngModel)]="description"></textarea>
+          </div>
+          
+        </div>
+        <div class="buttons-create-group">
+          <button class="btn-new btn-create" (click)="savePokemonData()">
+            <span class="btn-plus">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="15px" viewBox="0 0 958.6 958.6" style="enable-background:new 0 0 958.6 958.6;" xml:space="preserve">
+                <g>
+                  <path d="M877.8,958.6c33.1,0,60-26.899,60-60V288.7c0-23.9-9.5-46.8-26.4-63.6L712.8,26.4C695.899,9.5,672.999,0,649.2,0h-15.801
+                    v220c0,33.1-26.9,60-60,60H199.2c-33.1,0-60-26.9-60-60V0H80.8c-33.1,0-60,26.9-60,60v288.3v72v478.3c0,33.101,26.9,60,60,60h37.9
+                    V556.7c0-33.101,26.9-60,60-60h601.299c33.102,0,60,26.899,60,60V958.6H877.8L877.8,958.6z"/>
+                  <path d="M507.399,211.4c16.6,0,30-13.4,30-30V0H412.9v181.4c0,16.6,13.4,30,30,30H507.399z"/>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </span>
+            <span>Guardar</span>
+          </button>
+          <button class="btn-new btn-create" (click)="closeModal()">
+            <span class="btn-plus">x</span>
+            <span>Cancelar</span>
+          </button>
+        </div>
+      </form>
+</div>

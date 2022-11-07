@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --violet: #6557f5;
+    --hover-violet: #1100c9;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    
+}
+
+.btn-new {
+    text-align: center;
+    background-color: var(--violet);
+    border: 1px solid var(--violet);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-new:hover{
+    cursor: pointer;
+    box-shadow: 5px 1px 3px lightgrey;
+    color: var(--violet);
+    background-color: white;
+    border: 1px solid var(--violet);
+}

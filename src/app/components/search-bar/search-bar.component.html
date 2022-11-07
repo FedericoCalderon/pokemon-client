@@ -1,0 +1,11 @@
+
+<div class="header">
+    <form class="form-grup-container">
+        <input class="form-input" type="text" name="searchId" id="searchId" placeholder="Buscar" [(ngModel)]="search" (keyup)="onSearch($event)"/> 
+    </form>
+
+    <button class="btn-new decoration-none" (click)="showPopUp()">
+        <span class="btn-plus">+</span>
+        <span class="btn-text">Nuevo</span>
+    </button>
+</div>

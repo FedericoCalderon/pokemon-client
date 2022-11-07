@@ -1,0 +1,32 @@
+
+.form-grup-container {
+    
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-input {
+    border: solid 1px lightgrey;
+    border-radius: 3px;
+    padding: 8px;
+    max-width: 130px;
+}
+
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.btn-plus {
+    font-size: 20px;
+    text-align: center;
+    margin-right: 9px;
+    font-weight: 600;
+    text-align: center;
+}
