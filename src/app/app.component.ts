@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor (private pokemonService: PokemonService) {}
 
   ngOnInit(): void {
-    this.title = "Pokemons App";
+    this.title = "Pokémon App";
     this.currentPage = this.pokemonService.paginationParam;
   }
 

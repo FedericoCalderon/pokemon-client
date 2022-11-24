@@ -9,6 +9,8 @@
 .title {
     font-weight: 100;
     margin: 5px 1px;
+    align-self: center;
+    font-size: 30px;
 }
 
 .buttons-next-back-container {
