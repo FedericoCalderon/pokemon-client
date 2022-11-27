@@ -7,8 +7,7 @@ export const environment = {
   // urlGetPost: 'https://bp-pokemons.herokuapp.com/?idAuthor=',
   // urlPutDeleteSearch: 'https://bp-pokemons.herokuapp.com/',
   // authorId: 1
-  // URL_API: 'http://localhost:5001/pokemons/',
-  URL_API: 'https://the-pokemon-api.vercel.app/pokemons/',
+  URL_API: 'http://localhost:5001/pokemons/',
   GET_DATA_LIMIT: 100,
   PAGINATION_RANGE: 5
 };
