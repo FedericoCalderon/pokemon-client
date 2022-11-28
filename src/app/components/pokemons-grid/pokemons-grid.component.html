@@ -40,9 +40,9 @@
         </tbody>
       </table>    
     </div>
-    <div *ngIf="pokemons == undefined || pokemons.length == 0" class="no-data-table">
-      <h3>No Pokemons</h3>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZhBGdLpoiETlWXTeNfxTqnqYE4NmYuX8qbg&usqp=CAU" alt="no pokemon">
+    <div *ngIf="!pokemons || pokemons.length == 0" class="no-data-table">
+      <img src="https://thumbs.dreamstime.com/b/no-pokemon-here-sign-riga-latvia-july-restricted-area-over-white-background-go-very-popular-virtual-74549871.jpg"
+      alt="no pokemons">
     </div>
 </div>
 

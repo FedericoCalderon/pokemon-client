@@ -17,21 +17,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   onSearch(e: Event): void {
-
     this.pokemonService.searchLocalPokemon(this.search);
-
-    //   if (this.search.trim() == "") {
-    //     this.getAllPokemons();
-    //     return undefined;
-    //   }
-  
-    //   const idSearch = this.pokemons.filter(pokemon => pokemon.name.toLowerCase() == this.search.toLowerCase())[0].id;
-    //   if (!idSearch) return undefined
-    //   this.pokemonService.searchPokemon(idSearch)
-    //   .subscribe(pokemon => {
-    //     this.pokemons = [pokemon];
-    //   })
-    //   return undefined;
     }
   
     showPopUp() {

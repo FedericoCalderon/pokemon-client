@@ -9,7 +9,7 @@ export const environment = {
   // authorId: 1
   URL_API: 'http://localhost:5001/pokemons/',
   GET_DATA_LIMIT: 100,
-  PAGINATION_RANGE: 5
+  PAGINATION_RANGE: 10
 };
 
 /*
